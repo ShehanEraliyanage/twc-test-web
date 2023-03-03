@@ -71,8 +71,18 @@ export default function Register() {
     <>
       <div className="grid grid-cols-2 divide-x h-screen">
         <div className="bg-mainBack1 text-white ">
+          {/* <div className="fixed">
+            <Image
+              src="/images/log.png"
+              alt="Picture of the author"
+              width={735}
+              height={500}
+            />
+          </div> */}
           <div className="pl-36 pt-36 pb-10">
-            <h1 className="text-5xl font-semibold ">Register Now!</h1>
+            <h1 className="text-5xl font-semibold text-white ">
+              Register Now!
+            </h1>
           </div>
           <div className="pl-36 ">
             <form>
