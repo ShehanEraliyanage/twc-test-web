@@ -1,7 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 
-export default function Home() {
+const ContactView = () => {
   return (
     <>
       <div className=" bg-mainBack1 h-screen text-white">
@@ -70,4 +70,6 @@ export default function Home() {
       </div>
     </>
   );
-}
+};
+
+export default ContactView;
