@@ -23,7 +23,6 @@ const ContactView = () => {
             height={500}
           />
         </div> */}
-
         <div className="flex space-x-4">
           <Image
             src="/images/02_1.png"
@@ -39,24 +38,20 @@ const ContactView = () => {
           <h1 className="ml-48 text-3xl font-semibold">portal</h1>
         </div>
         <div className="ml-32 pt-10 pl-20">
-          <div>
-            <h1 className="text-6xl font-bold">Welcome,</h1>
-            <h2 className="text-4xl font-semibold">
-              This is where your contacts will live. Click the button below to
-            </h2>
-            <h2 className="text-4xl font-semibold">add a new contact.</h2>
-          </div>
-          <div className="text-center lg:text-left flex">
-            <Link href="/contacts/new">
-              <button
-                type="button"
-                className="inline- mt-20 mr-4 rounded-3xl border-2 bg-primary py-4 pl-10 pr-10 text-lg font-semibold  leading-normal text-white "
-                data-te-ripple-init
-                data-te-ripple-color="light"
-              >
-                Add your first contact
-              </button>
-            </Link>
+          <div className="flex flex-row">
+            <h1 className="text-5xl font-bold basis-1/2">Contacts</h1>
+            <div className="text-center lg:text-left flex">
+              <Link href="/contacts/new">
+                <button
+                  type="button"
+                  className="inline- mt-20 mr-4 rounded-3xl border-2 bg-primary py-4 pl-10 pr-10 text-lg font-semibold  leading-normal text-white "
+                  data-te-ripple-init
+                  data-te-ripple-color="light"
+                >
+                  Add your first contact
+                </button>
+              </Link>
+            </div>
           </div>
           <div>
             <Link

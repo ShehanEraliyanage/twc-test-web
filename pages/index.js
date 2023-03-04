@@ -4,26 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <div className=" bg-mainBack1 h-screen text-white">
-        {/* <div className="fixed">
-          <Image
-            src="/images/contact-us.png"
-            alt="Picture of the author"
-            width={1763.23}
-            height={1107.47}
-            left={122.01}
-            top={-489}
-          />
-        </div>
-        <div className="fixed">
-          <Image
-            src="/images/theme.png"
-            alt="Picture of the author"
-            width={1550}
-            height={500}
-          />
-        </div> */}
-
+      <div className="h-screen text-white bg-hero-pattern bg-cover bg-center ">
         <div className="flex space-x-4">
           <Image
             src="/images/02_1.png"
