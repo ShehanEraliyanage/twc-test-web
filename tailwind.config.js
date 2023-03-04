@@ -17,11 +17,15 @@ module.exports = {
       "2xl": "1536px",
     },
     extend: {
-      colors: {
-        mainBack1: "#083F46",
-      },
+      // colors: {
+      //   mainBack1: "#083F46",
+      // },
       zIndex: {
         "-1": "-1",
+      },
+      backgroundImage: {
+        "hero-pattern": "url('/images/main.png')",
+        "hero-pattern2": "url('/images/main2.png')",
       },
     },
   },
