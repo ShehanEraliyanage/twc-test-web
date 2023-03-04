@@ -18,8 +18,7 @@ export default function Register() {
         title: "Oops...",
         text: "Please fill in all fields!",
       });
-    }
-    if (email === "") {
+    } else if (email === "") {
       Swal.fire({
         icon: "error",
         title: "Oops...",
@@ -133,7 +132,7 @@ export default function Register() {
               </div>
 
               <div className="pt-10">
-                <Link href="/">~Back to Login</Link>
+                <Link href="/login">~Back to Login</Link>
               </div>
             </form>
           </div>
