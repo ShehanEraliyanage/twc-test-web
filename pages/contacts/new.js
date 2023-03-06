@@ -86,7 +86,7 @@ const ContactsNew = () => {
   return (
     <>
       <div className=" h-screen text-white bg-hero-pattern bg-cover bg-center">
-        <div className="flex space-x-4">
+        <div className="flex space-x-3 ml-2">
           <Image
             src="/images/02_1.png"
             className="ml-48 mt-20"
@@ -94,11 +94,11 @@ const ContactsNew = () => {
             width={40}
             height={500}
           />
-          <h1 className="ml-64 mt-20 text-3xl font-bold">twc</h1>
+          <h1 className="ml-72 mt-20 text-3xl font-bold">twc</h1>
         </div>
         <div>
-          <h1 className="ml-48 text-3xl font-extrabold ">Contacts</h1>
-          <h1 className="ml-48 text-3xl font-semibold">portal</h1>
+          <h1 className="ml-52 text-3xl font-extrabold ">Contacts</h1>
+          <h1 className="ml-52 text-3xl font-semibold">portal</h1>
         </div>
         <div className="ml-32 pt-10 pl-20">
           <div>

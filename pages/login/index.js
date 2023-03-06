@@ -8,8 +8,6 @@ export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  console.log(email, password);
-
   function LogUser() {
     if (email === "" || password === "") {
       Swal.fire({
@@ -26,8 +24,12 @@ export default function Login() {
           return response.data;
         })
         .then((item) => {
+          console.log("hi");
+          console.log(item);
+          console.log(item);
+          console.log("hi");
+
           if (item.data === "") {
-            console.log("1");
             Swal.fire({
               title: "Error!",
               text: "Log in Error ",
