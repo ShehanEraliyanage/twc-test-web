@@ -3,7 +3,7 @@ import Swal from "sweetalert2";
 import { useState } from "react";
 import Link from "next/link";
 
-export default function Register() {
+export default function Login() {
   return (
     <>
       <div className=" text-white  bg-hero-pattern2 bg-cover bg-center h-screen">

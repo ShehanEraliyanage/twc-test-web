@@ -12,7 +12,7 @@ export const getAllContact = async () => {
   return data;
 };
 export const deleteContact = async (id) => {
-  const { data } = await axios.post(baseURL + "/contacts/delete/", { id });
+  const { data } = await axios.post(baseURL + "/contacts/delete/", { id: id });
   return data;
 };
 export const updateContact = async (details) => {
