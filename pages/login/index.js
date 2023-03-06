@@ -1,9 +1,64 @@
-import Image from "next/image";
 import Swal from "sweetalert2";
 import { useState } from "react";
 import Link from "next/link";
 
+import { LoginUser } from "@/controllers/users";
+
 export default function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  console.log(email, password);
+
+  function LogUser() {
+    if (email === "" || password === "") {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Please fill all the fields!",
+      });
+    } else {
+      LoginUser({
+        email: email,
+        password: password,
+      })
+        .then((response) => {
+          return response.data;
+        })
+        .then((item) => {
+          if (item.data === "") {
+            console.log("1");
+            Swal.fire({
+              title: "Error!",
+              text: "Log in Error ",
+              icon: "error",
+              timer: 2000,
+              button: false,
+            });
+          } else {
+            Swal.fire({
+              title: "success!",
+              text: "Your Successfully LogIn",
+              icon: "success",
+              timer: 2000,
+              button: false,
+            }).then(function () {
+              window.location = "/";
+            });
+          }
+        })
+        .catch((error) => {
+          console.log(`2`);
+          Swal.fire({
+            title: "Error!",
+            text: "Log in Error ",
+            icon: "error",
+            timer: 2000,
+            button: false,
+          });
+        });
+    }
+  }
   return (
     <>
       <div className=" text-white  bg-hero-pattern2 bg-cover bg-center h-screen">
@@ -45,13 +100,13 @@ export default function Login() {
                     className="inline- mr-4 rounded-3xl border-2 bg-primary py-4 pl-10 pr-10 text-sm font-medium  leading-normal text-white "
                     data-te-ripple-init
                     data-te-ripple-color="light"
-                    // onClick={() => regiUser()}
+                    onClick={() => LogUser()}
                   >
                     Login
                   </button>
                   <div className="flex space-x-3">
                     <h1 className="pt-5">or</h1>
-                    <Link className="pt-5 underline" href="/">
+                    <Link className="pt-5 underline" href="/register">
                       Click here to Register
                     </Link>
                   </div>

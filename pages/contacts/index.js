@@ -12,7 +12,6 @@ import {
 
 export default function Home() {
   const [contacts, setContacts] = useState([]);
-
   const [editRowId, setEditRowId] = useState(null);
   const [editRowFullName, setEditRowFullName] = useState(null);
   const [editRowGender, setEditRowGender] = useState(null);
