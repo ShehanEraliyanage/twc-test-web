@@ -47,13 +47,16 @@ export default function Register() {
         email: email,
         password: password,
       }).then((res) => {
+        console.log("sasasas");
         console.log(res);
-        console.log(res.status);
-        if (res.status === true) {
+        console.log(res.success);
+        if (res.success === true) {
           Swal.fire({
             icon: "success",
             title: "Success",
             text: "Registration Successful!",
+          }).then(() => {
+            window.location.replace("/login");
           });
         } else {
           Swal.fire({
