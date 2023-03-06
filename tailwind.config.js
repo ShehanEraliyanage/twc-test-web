@@ -17,9 +17,9 @@ module.exports = {
       "2xl": "1536px",
     },
     extend: {
-      // colors: {
-      //   mainBack1: "#083F46",
-      // },
+      colors: {
+        mainBack1: "#083F46",
+      },
       zIndex: {
         "-1": "-1",
       },
